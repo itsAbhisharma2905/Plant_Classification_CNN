@@ -9,6 +9,8 @@ User-Friendly Interface: Interactive interface built using frameworks like Flask
 Image Upload: Users can upload plant images for classification.
 Real-Time Prediction: Provides instant classification results with confidence scores.
 Plant Care Tips: Offers care instructions for identified plants.
+
+
 🛠️ Technologies Used
 Programming Language: Python
 Deep Learning Framework: TensorFlow/Keras
@@ -30,10 +32,15 @@ Plant_CNN/
 ├── app.py                      # Main Flask/Django application file
 ├── requirements.txt            # List of dependencies
 └── README.md                   # Project documentation
+
+
 📊 Dataset
 Source: Mention the dataset source (e.g., Kaggle, custom dataset).
 Images: High-quality images of plants across multiple categories.
 Preprocessing: Images resized and augmented to improve model performance.
+
+
+
 🧠 Model Details
 Architecture: Convolutional Neural Network (CNN)
 Input Layer: Processes images of size (height x width x channels).
@@ -44,6 +51,8 @@ Activation Functions: ReLU, Softmax
 Optimizer: Adam
 Loss Function: Categorical Crossentropy
 Accuracy Achieved: Mention accuracy (e.g., 90%+ on test data).
+
+
 ⚙️ Installation and Usage
 Prerequisites
 Python 3.x
@@ -63,6 +72,8 @@ bash
 Copy code
 python app.py
 View the classification result and care tips.
+
+
 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
@@ -80,6 +91,7 @@ bash
 Copy code
 git push origin feature-name
 Submit a pull request.
+
 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
