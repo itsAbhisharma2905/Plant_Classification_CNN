@@ -1,100 +1,115 @@
-🌱 Plant Classification using CNN and Deep Learning
-📋 Project Overview
-This project leverages Convolutional Neural Networks (CNNs) and deep learning techniques to classify plant species based on their images.
-The application is designed to aid researchers, botanists, and enthusiasts in identifying plants efficiently.
+# AI-Powered Plant Health Diagnostic System
 
-🚀 Features
-Accurate Plant Identification: Trained on diverse plant image datasets.
-User-Friendly Interface: Interactive interface built using frameworks like Flask or Django.
-Image Upload: Users can upload plant images for classification.
-Real-Time Prediction: Provides instant classification results with confidence scores.
-Plant Care Tips: Offers care instructions for identified plants.
+A computer vision and deep learning project exploring image-based plant health classification.
 
+## Overview
 
-🛠️ Technologies Used
-Programming Language: Python
-Deep Learning Framework: TensorFlow/Keras
-Frontend: HTML, CSS, Bootstrap
-Backend: Flask/Django
-Database: SQLite/MySQL (if applicable)
-Tools: Jupyter Notebook, OpenCV
-📂 Project Structure
-php
-Copy code
-Plant_CNN/
-│
-├── Model_Training.ipynb        # Jupyter Notebook for training the CNN model
-├── static/                     # Static files (CSS, JS, images)
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── templates/                  # HTML templates for the web app
-├── app.py                      # Main Flask/Django application file
-├── requirements.txt            # List of dependencies
-└── README.md                   # Project documentation
+The Plant Health Diagnostic System aims to identify plant health conditions from images using a trained image classification model.
 
+The project explores deep learning, image preprocessing, model inference, and application integration.
 
-📊 Dataset
-Source: Mention the dataset source (e.g., Kaggle, custom dataset).
-Images: High-quality images of plants across multiple categories.
-Preprocessing: Images resized and augmented to improve model performance.
+## Features
 
+- Plant image input
+- Image preprocessing
+- CNN-based image classification
+- Prediction result display
+- Model inference workflow
+- Frontend integration, where implemented
+- API-based backend integration, where implemented
 
+## Technology Stack
 
-🧠 Model Details
-Architecture: Convolutional Neural Network (CNN)
-Input Layer: Processes images of size (height x width x channels).
-Convolutional Layers: Extract spatial features.
-Pooling Layers: Reduce dimensionality.
-Fully Connected Layers: Classify into plant categories.
-Activation Functions: ReLU, Softmax
-Optimizer: Adam
-Loss Function: Categorical Crossentropy
-Accuracy Achieved: Mention accuracy (e.g., 90%+ on test data).
+| Component | Technology |
+|---|---|
+| Programming | Python |
+| Deep Learning | TensorFlow / PyTorch |
+| Image Processing | OpenCV, Pillow |
+| Numerical Processing | NumPy |
+| Data Analysis | Pandas, Matplotlib |
+| Backend | Flask, if configured |
+| Frontend | React, if configured |
+| Database | Actual configured database |
 
+## Machine Learning Workflow
 
-⚙️ Installation and Usage
-Prerequisites
-Python 3.x
-Virtual environment (optional)
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/Plant_CNN.git
-cd Plant_CNN
+1. Collect and prepare the image dataset.
+2. Resize and preprocess input images.
+3. Split the dataset into training, validation, and test sets.
+4. Train the configured CNN architecture.
+5. Evaluate the trained model.
+6. Use the trained model to predict the class of new images.
+
+## Dataset
+
+Document the actual dataset used:
+
+- Dataset name: [Add name]
+- Source: [Add source URL]
+- Number of images: [Add verified count]
+- Number of classes: [Add class count]
+- Dataset licence: [Add licence]
+
+## Model Evaluation
+
+Add actual evaluation results here.
+
+| Metric | Result |
+|---|---|
+| Accuracy | [Verified result] |
+| Precision | [Verified result] |
+| Recall | [Verified result] |
+| F1-score | [Verified result] |
+
+Also add a confusion matrix and per-class evaluation if available.
+
+Do not use placeholder or estimated accuracy figures.
+
+## Installation
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd YOUR_PROJECT_FOLDER
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
 Install dependencies:
-bash
-Copy code
+
+```bash
 pip install -r requirements.txt
-Run the application:
-bash
-Copy code
-python app.py
-View the classification result and care tips.
+```
 
+Add the actual training or inference command used by the repository.
 
-🤝 Contributing
-Contributions are welcome! Please follow these steps:
+## Limitations
 
-Fork the repository.
-Create a new branch:
-bash
-Copy code
-git checkout -b feature-name
-Commit your changes:
-bash
-Copy code
-git commit -m "Add feature"
-Push to the branch:
-bash
-Copy code
-git push origin feature-name
-Submit a pull request.
+- Predictions depend on dataset quality.
+- Images taken under different lighting and environmental conditions may affect results.
+- Classification results do not replace expert agricultural diagnosis.
+- The model should not be assumed to recognise plant diseases outside its trained classes.
 
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Future Improvements
 
-🙌 Acknowledgments
-Thanks to [https://www.kaggle.com/datasets/rashikrahmanpritom/plant-disease-recognition-dataset] for the plant image dataset.
-Special thanks to the deep learning community for helpful resources and tutorials.
+- Larger and more diverse datasets
+- Transfer learning
+- Model explainability
+- Mobile inference
+- Model optimisation
+- Real-world field testing
+
+## Author
+
+Abhi Sharma
+
+GitHub: https://github.com/itsAbhisharma2905
